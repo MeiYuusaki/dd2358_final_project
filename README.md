@@ -1,19 +1,49 @@
-# artificialneuralnetwork-python
-Artificial Neural Network for Image Classification
+# DD2358 Final Project - Optimisation of Artificial Neural Network for Image Classification by pmocz 
 
-## Create Your Own Artificial Neural Network for Multi-class Classification (With Python)
+## Team members
+- Chong Wen Xuan Darryl
+- Ching Xin Wei
 
-### Philip Mocz (2023) [@PMocz](https://twitter.com/PMocz)
+## Overview
+For our DD2358 Final Project, we seek to optimise the Artificial Neural Network for Image Classification algorithm by pmocz ([link](https://github.com/pmocz/artificialneuralnetwork-python)) using techniques we learnt throughout the course. 
 
-### [📝 Read the Algorithm Write-up on Medium](https://philip-mocz.medium.com/create-your-own-artificial-neural-network-for-multi-class-classification-with-python-7011946af722)
+More specifically, we utilised the following approaches:
+- Loop Optimisation
+- PyTorch
+- Cython
 
-Create and train your own artificial neural network to classify images of galaxies from SDSS/the Galaxy Zoo project.
 
-Data used in this work is heavily modified and simplified from  the Galaxy Zoo 2 (Willett et al.,2013), MNRAS, 435, 2835.
+## Running the code
 
+### Dependencies
+Make sure the following libraries are installed:
+- PyTorch
+- Cython
+- matplotlib
+- NumPy
 
+#### To run the original code written by pmocz:
 ```
 python artificialneuralnetwork.py
 ```
 
-![Simulation](./artificialneuralnetwork.png)
+#### To run the Optimised Loop version:
+```
+python improveforloop.py
+```
+
+#### To run the PyTorch version:
+```
+python withpytorch.py
+```
+
+#### To run the Cython version:
+1. First compile the Python code with Cython:
+```
+python setup.py build_ext --inplace
+```
+2. Then run the following:
+```
+python withcython.py
+```
+
